@@ -5,6 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <h1 id="heading">MyPhone shop</h1>
+    <button onclick = "changeHeading()">Click me to change heading</button>
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Image</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://www.amazon.co.uk/Apple-iPhone-13-128GB-PRODUCT/dp/B09G9GFDW6/ref=sr_1_1?crid=3DRVLH3ZIE290&keywords=iphone+13+red&qid=1665403145&qu=eyJxc2MiOiIyLjE4IiwicXNhIjoiMS40OSIsInFzcCI6IjEuMDIifQ%3D%3D&sprefix=iphone+13+red%2Caps%2C163&sr=8-1"
+            target="_blank"
+            >Iphone 13</a
+          >
+        </td>
+        <td><img src="./assets/iphone13.png" alt="iphone 13 image" /></td>
+        <td>Apple phone</td>
+        <td>One of the most modern smartphones</td>
+        <td class="price">800 euro</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://www.amazon.co.uk/Apple-iPhone-64GB-Smartphone-Excellent/dp/B074P74YRX/ref=sr_1_1?crid=3JSL0PIZILQOU&keywords=iphone+6+pink+smartphone&qid=1665404016&qu=eyJxc2MiOiIwLjk1IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=iphone+6+pink+smartphone%2Caps%2C146&sr=8-1"
+            target="_blank"
+            >Iphone 6</a
+          >
+        </td>
+        <td><img src="./assets/iphone6.jpeg" alt="iphone 6 image" /></td>
+        <td>Apple phone</td>
+        <td>Apple smartphone, older version</td>
+        <td class="price">175 euro</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://www.amazon.co.uk/Samsung-Galaxy-Dual-SIM-Android-Smartphone-Prism-White/dp/B07NWP1Z9B/ref=sr_1_5?keywords=samsung+galaxy+s10&qid=1665403309&qu=eyJxc2MiOiI1LjAwIiwicXNhIjoiNC40MSIsInFzcCI6IjMuNzcifQ%3D%3D&sr=8-5"
+            target="_blank"
+            >Samsung Galaxy S10</a
+          >
+        </td>
+        <td>
+          <img src="./assets/samsung-galaxyS10.jpeg" alt="samsung galaxy s10 image" />
+        </td>
+        <td>Samsung phone</td>
+        <td>Samsung smartphone, generation Galaxy S</td>
+        <td class="price">350 euro</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://www.amazon.co.uk/Samsung-Smartphone-Graphite-Manufacturer-Warranty/dp/B0B6WT8LWF/ref=sr_1_2?crid=1K8J3YVJOJIYA&keywords=samsung+galaxy+z+flip+4+phone&qid=1665403914&qu=eyJxc2MiOiIzLjA0IiwicXNhIjoiMi44NSIsInFzcCI6IjAuMDAifQ%3D%3D&sprefix=samsung+galaxy+z+flip+4+phone%2Caps%2C267&sr=8-2"
+            target="_blank"
+            >Samsung Galaxy Z Flip 4</a
+          >
+        </td>
+        <td>
+          <img src="./assets/samsung-galaxyZ.jpeg" alt="samsung galaxy z image" />
+        </td>
+        <td>Samsung phone</td>
+        <td>Samsung smartphone, generation Galaxy Z</td>
+        <td class="price">1000 euro</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://www.amazon.co.uk/HUAWEI-Nova-Smartphone-128GB-Starry/dp/B09JYQ17X8/ref=sr_1_5?keywords=huawei+nova+10+phone&qid=1665403966&qu=eyJxc2MiOiIyLjE2IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sr=8-5"
+            target="_blank"
+            >Huawei Nova 10</a
+          >
+        </td>
+        <td><img src="./assets/huawei.jpeg" alt="huawei nova 10 image" /></td>
+        <td>Huawei phone</td>
+        <td>Huawei smartphone, model Nova</td>
+        <td class="price">500 euro</td>
+      </tr>
+    </table>
+    <button onclick="addNewClass()">Click me to change link style</button>
+    <button onclick="changeVisibility()">Click me to make images invisible</button>
+    <button onclick="changePriceColor()">Click me to change the price color</button>
+    <!-- <label>Your message</label> -->
+    <textarea name="message rows="5" cols="40">Your message here</textarea>
+    <button onclick="changeBackgroundColor()">Click me to change the background color of the page</button>
+    <footer>MyPhone Store</footer>
+    <button onclick="changeFooter()">Click me to change footer</button>
+  </body>
 </html>
