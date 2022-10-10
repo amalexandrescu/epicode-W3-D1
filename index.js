@@ -15,8 +15,8 @@ function changeBackgroundColor() {
 //Exercise 9
 
 function changeFooter() {
-  let foo = document.getElementsByTagName("footer");
-  foo[0].innerHTML = "Fake address of footer";
+  let footerAddress = document.querySelector("footer > div:nth-child(2)");
+  footerAddress.innerHTML = "Some place in Romania";
 }
 
 //Exercise 10
