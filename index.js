@@ -1,4 +1,4 @@
-//Exercise 7
+//Exercise 7 Write a function to change the h1 text to something else
 
 function changeHeading() {
   // const someHeading = document.getElementsByTagName("h1");
@@ -6,20 +6,20 @@ function changeHeading() {
   someHeading.innerHTML = "I've changed the heading";
 }
 
-//Exercise 8
+//Exercise 8 Write a function to change the page background color
 
 function changeBackgroundColor() {
   document.body.style.backgroundColor = "#c0d7ff";
 }
 
-//Exercise 9
+//Exercise 9 Write a function to change the footer address with a fake one
 
 function changeFooter() {
   let footerAddress = document.querySelector("footer > div:nth-child(2)");
   footerAddress.innerHTML = "Some place in Romania";
 }
 
-//Exercise 10
+//Exercise 10 Write a function to add a CSS class to every Amazon link
 
 function addNewClass() {
   let allA = document.querySelectorAll("a");
@@ -28,7 +28,7 @@ function addNewClass() {
   }
 }
 
-//Exercise 11
+//Exercise 11 Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
 
 function changeVisibility() {
   let allImg = document.querySelectorAll("img");
@@ -37,12 +37,12 @@ function changeVisibility() {
   }
 }
 
-//Exercise 12
+//Exercise 12 Write a function to color the price of the products in a different one every time it’s invoked
 
 function getRandomColor() {
-  var letters = "0123456789ABCDEF";
-  var color = "#";
-  for (var i = 0; i < 6; i++) {
+  let letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
