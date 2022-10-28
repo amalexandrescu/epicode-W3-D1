@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)file:///Users/alexis/Code/EPICODE/friday%20solo%20projects/epicode-week3-project/quiz.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./Quiz_files/style.css">
+    <script src="./Quiz_files/quiz.js" defer=""></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Quiz</h1>
+      <div>
+        <label class="existing-label">Select the number of questions for your quiz</label>
+        <select id="questions" form="numberOfQuestionsForm"><option value="1" class="customSelectTag">1</option><option value="2" class="customSelectTag">2</option><option value="3" class="customSelectTag">3</option><option value="4" class="customSelectTag">4</option><option value="5" class="customSelectTag">5</option><option value="6" class="customSelectTag">6</option><option value="7" class="customSelectTag">7</option><option value="8" class="customSelectTag">8</option><option value="9" class="customSelectTag">9</option><option value="10" class="customSelectTag">10</option></select>
+        <label class="existing-label">Select difficulty of the questions</label>
+        <select id="difficulty" form="numberOfQuestionsForm">
+          <option value="easy">easy</option>
+          <option value="medium">medium</option>
+          <option value="hard">hard</option>
+        </select>
+        <button>Start quiz</button>
+      </div>
+    <div><p class="customP">What does CPU stand for?</p><div class="customDivAnswer"><input type="radio" id="1"><label>Central Processing Unit</label></div><div class="customDivAnswer"><input type="radio" id="2"><label>Central Process Unit</label></div><div class="customDivAnswer"><input type="radio" id="3"><label>Computer Personal Unit</label></div><div class="customDivAnswer"><input type="radio" id="4"><label>Central Processor Unit</label></div><button style="
+    margin-right: 0;
+">NEXT</button></div></div>
+  
+
+
+<!--
+        QUIZ GAME!
+
+        RULES:
+        / The player must guess correctly a certain amount of questions
+        / Each correct answer gives him one point
+        / Answers could be multiple or true/false
+        / At the end of the game, the user must know his/her total score
+
+        QUESTIONS:
+        / You can get them from this URL ( http://bit.ly/strive_QUIZZ ) or you can write your own
+        / Could be multiple of boolean (true / false)
+
+        HINTS:
+        / Keep a global variable score for the user score
+        / Keep a variable questionNumber for the question the user is answering
+        / When questionNumber is bigger then the available questions, present the score
+        / Start working with the questions saved in a variable (or you can use AJAX for fetching external questions if you already know how to do it!)
+        / Start with the easier version and THEN implement the EXTRAs
+        / Please debug everything / try it on the console to be sure of what to expect from your code
+
+        EXTRA:
+        / Show if the answer provided was the wrong one or correct it after clicking
+        / Present the questions one at a time instead of having all of them displayed together
+        / Let the user select difficulty and number of questions (you can get q/a from https://opentdb.com/api.php?amount=10&category=18&difficulty=easy modifying amount and difficulty)
+    
+        /* WHEN YOU ARE FINISHED
+          Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
+        */
+    -->
+</body></html>
